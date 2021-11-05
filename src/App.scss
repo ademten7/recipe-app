@@ -1,0 +1,13 @@
+.App {
+    background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+}
+
+.search-form {
+    font-size: 1.5em;
+    margin: 2em;
+    display: grid;
+    place-items: center;
+    .search-button {
+        background-color: rgb(220, 20, 143);
+    }
+}

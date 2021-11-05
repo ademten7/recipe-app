@@ -1,0 +1,33 @@
+li {
+    list-style-type: none;
+}
+
+.title {
+    h1 {
+        background-image: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    }
+    display: grid;
+    place-items: center;
+    color: whitesmoke;
+    margin-top: 5em;
+    img {
+        border-radius: 50%;
+        margin-top: 15px;
+        margin-bottom: 2em;
+    }
+}
+
+.descriptions {
+    margin-top: 3em;
+    display: grid;
+    place-items: center;
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    width: 50%;
+    margin: 0 auto;
+    padding: 2em;
+    border-radius: 20px;
+    box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset, -8px -8px 12px 0 rgba(0, 0, 0, 0.25) inset;
+}
