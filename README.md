@@ -4,7 +4,7 @@
 
 - Hook useEffect
 
-- Hook usRef
+- Hook useRef
 
 ![Recipe](src/images/Recipe1.png)
 ![Recipe](src/images/Recipe2.png)
