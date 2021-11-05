@@ -1,5 +1,6 @@
 li {
-    list-style-type: none;
+    list-style-type: circle;
+    font-size: 1.1em;
 }
 
 .title {
@@ -25,9 +26,23 @@ li {
     display: grid;
     place-items: center;
     background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
     padding: 2em;
     border-radius: 20px;
     box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset, -8px -8px 12px 0 rgba(0, 0, 0, 0.25) inset;
+    .cal {
+        color: rgb(31, 31, 255);
+    }
+    .cuisine-type {
+        color: crimson;
+    }
+    .sub-heads {
+        font-size: 1.5em;
+        color: rgb(11, 144, 111);
+    }
+    .health-labels-list {
+        display: grid;
+        place-items: center;
+    }
 }

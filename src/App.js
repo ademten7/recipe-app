@@ -36,18 +36,16 @@ const App = () => {
       <Header />
       <div className="container ">
         <form onSubmit={searchNewRecipes} className="search-form">
-          <div>
-            <input
-              name="recipe"
-              className="search-bar"
-              type="text"
-              ref={inputRef}
-              placeholder="Ingredient,dish,keywords"
-            />
-            <button className="search-button" type="submit">
-              <FaSearch />
-            </button>
-          </div>
+          <input
+            name="recipe"
+            className="search-bar"
+            type="text"
+            ref={inputRef}
+            placeholder="Ingredient,dish,keywords"
+          />
+          <button className="search-button" type="submit">
+            <FaSearch />
+          </button>
         </form>
         {recipes.map((recipe) => {
           return (

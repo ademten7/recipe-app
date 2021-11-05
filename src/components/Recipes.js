@@ -20,15 +20,19 @@ const Recipes = ({
         <img src={image} width="200" alt="" />
       </div>
       <div className="descriptions">
-        <p>
+        <p className="sub-heads">
           Cuisine Type:{" "}
-          {cuisineType
-            .substring(0, 1)
-            .toUpperCase()
-            .concat(cuisineType.substring(1).toLowerCase())}
+          <span className="cuisine-type">
+            {cuisineType
+              .substring(0, 1)
+              .toUpperCase()
+              .concat(cuisineType.substring(1).toLowerCase())}
+          </span>
         </p>
-        <p>Calories: {calories.toFixed(0)}</p>
-        <p> Diet Labels:</p>
+        <p className="sub-heads">
+          Calories: <span className="cal">{calories.toFixed(0)}</span>
+        </p>
+        <p className="sub-heads"> Diet Labels</p>
         <ul>
           {" "}
           {dietLabels.length > 0
@@ -37,7 +41,7 @@ const Recipes = ({
               })
             : "No information found"}
         </ul>
-        <p>Dish Type:</p>
+        <p className="sub-heads">Dish Type</p>
         <ul>
           {" "}
           {dishType.map((type) => {
@@ -51,13 +55,13 @@ const Recipes = ({
             );
           })}
         </ul>
-        <p>Health Labels:</p>
-        <ul>
+        <p className="sub-heads">Health Labels</p>
+        <ul className="health-labels-list">
           {healthLabels.map((label) => {
             return <li>{label}</li>;
           })}
         </ul>
-        <p>Meal Type:</p>
+        <p className="sub-heads">Meal Type</p>
         <ul>
           {mealType.map((type) => {
             return (
@@ -71,10 +75,10 @@ const Recipes = ({
             );
           })}
         </ul>
-        <p>Ingredients:</p>
-        <ul>
+        <p className="sub-heads">Ingredients</p>
+        <ul className="health-labels-list">
           {ingredientLines.map((ingredient) => {
-            return <li className="ingredients">{ingredient}</li>;
+            return <li className="ingredients-list">{ingredient}</li>;
           })}
         </ul>
       </div>

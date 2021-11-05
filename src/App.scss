@@ -3,10 +3,10 @@
 }
 
 .search-form {
-    font-size: 1.5em;
-    margin: 2em;
-    display: grid;
-    place-items: center;
+    font-size: 1.25em;
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
     .search-button {
         background-color: rgb(220, 20, 143);
     }
